@@ -69,10 +69,12 @@ export default function SignUp() {
           {loading ? "Loading..." : "Sign Up"}
         </button>
       </form>
-      <div className="flex gap-2 mt-5">
+      <div className="flex gap-2 mt-5 sm:gap-4 md:mt-6">
         <p>Have an account?</p>
         <Link to="/sign-in">
-          <span className="text-blue-500">Sign In</span>
+          <span className="text-blue-500 font-semibold hover:underline">
+            Sign In
+          </span>
         </Link>
       </div>
       <p className="text-red-700 mt-5">{error && "Something went wrong!"}</p>
